@@ -1,0 +1,46 @@
+{
+  "mascotas": [
+    {
+      "id": "1",
+      "nombre": "Princesa",
+      "tipo": "Perro",
+      "color": "Cobrizo"
+    },
+    {
+      "id": "c7bb",
+      "nombre": "Cachupin",
+      "tipo": "perro",
+      "color": "cafe"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "username": "usuario1",
+      "password": "duoc1234",
+      "email": "usuario1@mail.cl",
+      "isactive": true
+    },
+    {
+      "id": "2",
+      "username": "usuario2",
+      "password": "maipu1234",
+      "email": "usuario2@mail.cl",
+      "isactive": true
+    }
+  ],
+  "qr": [
+    {
+      "id": "d7b6",
+      "nomMascota": "Cachupin",
+      "tipoMascota": "perro",
+      "username": "usuario1"
+    },
+    {
+      "id": "300b",
+      "nomMascota": "Princesa",
+      "tipoMascota": "Perro",
+      "username": "usuario1"
+    }
+  ]
+}
