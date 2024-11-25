@@ -53,7 +53,28 @@
     
   ],
   "usuarios": [
-    
+    {
+      "id": "1",
+      "username": "user1234",
+      "email": "user@user1",
+      "pnombre": "usuario",
+      "rut": 1212123,
+      "apellido": "don",
+      "carrera": "Ing en informatica",
+      "password": "user1234",
+      "isactive": true
+    },
+    {
+      "id": "64af",
+      "rut": 20111221,
+      "username": "user1212",
+      "email": "user@user.cl",
+      "pnombre": "Esteban",
+      "apellido": "Ibarra",
+      "carrera": "Turismo",
+      "password": "user1212",
+      "isactive": true
+    }
   ],
   "QR": [
     
