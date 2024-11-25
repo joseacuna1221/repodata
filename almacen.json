@@ -10,9 +10,6 @@
       "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, impedit enim repellendus similique corporis incidunt, perferendis quasi minus nobis possimus minima, illo labore quis tenetur iste sequi placeat voluptate ullam.",
       "asistentes": [
         {
-          "username": "kkroto1221"
-        },
-        {
           "username": "user1234",
           "estado": "registrado"
         }
