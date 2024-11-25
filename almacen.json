@@ -1,46 +1,89 @@
 {
-  "mascotas": [
+  "eventos": [
     {
-      "id": "1",
-      "nombre": "Princesa",
-      "tipo": "Perro",
-      "color": "Cobrizo"
+      "id": "4b26",
+      "nombre": "Campeonato Ajedrez",
+      "lugar": "Sede Maipu",
+      "cupos": 23,
+      "fecha": "2024-12-05",
+      "anfitrion": "Yo",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, impedit enim repellendus similique corporis incidunt, perferendis quasi minus nobis possimus minima, illo labore quis tenetur iste sequi placeat voluptate ullam.",
+      "asistentes": [
+        {
+          "username": "kkroto1221"
+        },
+        {
+          "username": "user1234",
+          "estado": "registrado"
+        }
+      ],
+      "comentarios": []
     },
     {
-      "id": "c7bb",
-      "nombre": "Cachupin",
-      "tipo": "perro",
-      "color": "cafe"
+      "id": "126b",
+      "nombre": "Pelea Robots",
+      "lugar": "Sede Quilicura",
+      "cupos": 250,
+      "fecha": "2024-12-14",
+      "anfitrion": "DUOC",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, impedit enim repellendus similique corporis incidunt, perferendis quasi minus nobis possimus minima, illo labore quis tenetur iste sequi placeat voluptate ullam.",
+      "asistentes": [],
+      "comentarios": []
+    },
+    {
+      "id": "3de9",
+      "nombre": "Charla Salud Mental",
+      "lugar": "Anfiteatro",
+      "cupos": 250,
+      "fecha": "2024-12-14",
+      "anfitrion": "SSAAAS",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, impedit enim repellendus similique corporis incidunt, perferendis quasi minus nobis possimus minima, illo labore quis tenetur iste sequi placeat voluptate ullam.",
+      "asistentes": [
+        {
+          "username": "user1212"
+        }
+      ],
+      "comentarios": [
+        {
+          "comentario": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, impedit enim repellendus similique.",
+          "user": "user1212"
+        }
+      ]
     }
   ],
   "usuarios": [
     {
       "id": "1",
-      "username": "usuario1",
-      "password": "duoc1234",
-      "email": "usuario1@mail.cl",
+      "username": "user1234",
+      "email": "user@user1",
+      "pnombre": "usuario",
+      "rut": 1212123,
+      "apellido": "don",
+      "carrera": "Ing en informatica",
+      "password": "user1234",
       "isactive": true
     },
     {
-      "id": "2",
-      "username": "usuario2",
-      "password": "maipu1234",
-      "email": "usuario2@mail.cl",
+      "id": "64af",
+      "rut": 20111221,
+      "username": "user1212",
+      "email": "user@user.cl",
+      "pnombre": "Esteban",
+      "apellido": "Ibarra",
+      "carrera": "Turismo",
+      "password": "user1212",
       "isactive": true
-    }
-  ],
-  "qr": [
-    {
-      "id": "d7b6",
-      "nomMascota": "Cachupin",
-      "tipoMascota": "perro",
-      "username": "usuario1"
     },
     {
-      "id": "300b",
-      "nomMascota": "Princesa",
-      "tipoMascota": "Perro",
-      "username": "usuario1"
+      "id": "d48d",
+      "username": "kkroto1221",
+      "email": "asd@asd.cl",
+      "rut": 21706246,
+      "pnombre": "jose",
+      "apellido": "acuna",
+      "carrera": "turismo",
+      "password": "ppkk1221",
+      "isactive": true
     }
   ]
 }
