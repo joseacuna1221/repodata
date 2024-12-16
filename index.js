@@ -22,7 +22,7 @@ server.post("/recover-password", (req, res) => {
   const { email } = req.body;
 
   const db = router.db;
-  const user = db.get("users").find({ email }).value();
+  const user = db.get("usuarios").find({ email }).value();
 
   if (!user) {
     return res.status(404).json({ message: "Correo no encontrado" });
@@ -31,7 +31,7 @@ server.post("/recover-password", (req, res) => {
   const token = Math.random().toString(36).substring(2);
 
   user.resetToken = token;
-  db.get("users").find({ email }).assign({ resetToken: token }).write();
+  db.get("usuarios").find({ email }).assign({ resetToken: token }).write();
 
   const mailOptions = {
     from: "theskeletonsans696@gmail.com",
