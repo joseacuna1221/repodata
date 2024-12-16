@@ -34,7 +34,7 @@ server.post("/recover-password", (req, res) => {
   db.get("users").find({ email }).assign({ resetToken: token }).write();
 
   const mailOptions = {
-    from: "tu-correo@gmail.com",
+    from: "theskeletonsans696@gmail.com",
     to: email,
     subject: "Recuperación de contraseña",
     text: `Hola, este es tu token de recuperación de contraseña: ${token}`,
