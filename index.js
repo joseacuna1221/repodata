@@ -13,8 +13,8 @@ server.use(middlewares);
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "theskeletonsans696@gmail.com",
-    pass: "duct bjae uvqw dgnn",
+    user: "pruebaskk1221@gmail.com",
+    pass: "ppkk1221.",
   },
 });
 
@@ -34,7 +34,7 @@ server.post("/recover-password", (req, res) => {
   db.get("usuarios").find({ email }).assign({ resetToken: token }).write();
 
   const mailOptions = {
-    from: "theskeletonsans696@gmail.com",
+    from: "pruebaskk1221@gmail.com",
     to: email,
     subject: "Recuperación de contraseña",
     text: `Hola, este es tu token de recuperación de contraseña: ${token}`,
