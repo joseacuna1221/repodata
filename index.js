@@ -1,6 +1,5 @@
 const jsonServer = require("json-server");
 const nodemailer = require("nodemailer");
-const fs = require("fs");
 
 const server = jsonServer.create();
 const router = jsonServer.router("almacen.json");
@@ -10,6 +9,7 @@ const port = process.env.PORT || 10000;
 server.use(jsonServer.bodyParser);
 server.use(middlewares);
 
+// Configuración del transporte de correos
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -18,6 +18,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+// Ruta para enviar token de recuperación
 server.post("/recover-password", (req, res) => {
   const { email } = req.body;
 
@@ -30,7 +31,7 @@ server.post("/recover-password", (req, res) => {
 
   const token = Math.random().toString(36).substring(2);
 
-  user.resetToken = token;
+  // Guardar el token en el usuario correspondiente
   db.get("usuarios").find({ email }).assign({ resetToken: token }).write();
 
   const mailOptions = {
@@ -50,6 +51,27 @@ server.post("/recover-password", (req, res) => {
   });
 });
 
+// Ruta para restablecer la contraseña
+server.post("/reset-password", (req, res) => {
+  const { token, newPassword } = req.body;
+
+  const db = router.db;
+  const user = db.get("usuarios").find({ resetToken: token }).value();
+
+  if (!user) {
+    return res.status(400).json({ message: "Token inválido o expirado." });
+  }
+
+  // Actualizar la contraseña del usuario y eliminar el token
+  db.get("usuarios")
+    .find({ resetToken: token })
+    .assign({ password: newPassword, resetToken: null })
+    .write();
+
+  res.json({ message: "Contraseña actualizada correctamente." });
+});
+
+// Usar el router de JSON Server para manejar otras rutas
 server.use(router);
 
 server.listen(port, () => {
