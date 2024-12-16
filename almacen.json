@@ -60,6 +60,7 @@
       "carrera": "Ing en informatica",
       "password": "user1234",
       "isactive": true
+      "resetToken": null
     },
     {
       "id": "64af",
@@ -71,6 +72,7 @@
       "carrera": "Turismo",
       "password": "user1212",
       "isactive": true
+      "resetToken": null
     }
   ],
   "QR": [
