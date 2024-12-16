@@ -59,7 +59,7 @@
       "apellido": "don",
       "carrera": "Ing en informatica",
       "password": "user1234",
-      "isactive": true
+      "isactive": true,
       "resetToken": null
     },
     {
@@ -71,7 +71,7 @@
       "apellido": "Ibarra",
       "carrera": "Turismo",
       "password": "user1212",
-      "isactive": true
+      "isactive": true,
       "resetToken": null
     }
   ],
