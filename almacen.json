@@ -47,7 +47,6 @@
         }
       ]
     }
-    
   ],
   "usuarios": [
     {
@@ -58,9 +57,11 @@
       "rut": 1212123,
       "apellido": "don",
       "carrera": "Ing en informatica",
-      "password": "user1234",
+      "password": "scrypt$16384$8$1$3c036786c9986edf7896b6282b0f09bf$1ddafa6b9b58d379bf2e27e5595132e5f513a881bb3d37434160a4c521f7b2409477e7189f963286d4c60c4806e9ec71f802d82b9274cf6848c1b9c845ca1b56",
       "isactive": true,
-      "resetToken": null
+      "resetTokenHash": null,
+      "resetTokenExpiresAt": null,
+      "role": "user"
     },
     {
       "id": "64af",
@@ -70,12 +71,13 @@
       "pnombre": "Esteban",
       "apellido": "Ibarra",
       "carrera": "Turismo",
-      "password": "user1212",
+      "password": "scrypt$16384$8$1$aac2c0aaa7ef24805fd3c4e29e0860cc$83f2414723d8cb42a70e0b4a5168b89b64ec006a96116fae516efdfeeeaeea3086a7803306467c69f2d75dcbee59a9e75b99f3ffcd1cac3a923d8395413cced3",
       "isactive": true,
-      "resetToken": null
+      "resetTokenHash": null,
+      "resetTokenExpiresAt": null,
+      "role": "user"
     }
   ],
-  "QR": [
-    
-  ]
+  "QR": [],
+  "sessions": []
 }

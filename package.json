@@ -1,19 +1,19 @@
 {
   "name": "repodata",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "API segura para la aplicación Ionic/Angular",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "check": "node --check index.js"
   },
-  "keywords": [],
-  "author": "",
+  "engines": {
+    "node": ">=22"
+  },
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "json-server": "^0.17.4",
-    "node": "^22.11.0",
-    "nodemailer": "^6.9.16"
+    "nodemailer": "^10.0.0"
   }
 }
