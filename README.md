@@ -66,14 +66,3 @@ La versión anterior tenía una contraseña de aplicación Gmail dentro de `inde
 - `POST /QR/issue`
 - `POST /QR/validate`
 
-## Roles
-
-Las cuentas nuevas se crean con `role: "user"`. El cliente nunca puede enviar un rol. Para promover una cuenta existente puedes definir temporalmente:
-
-```text
-BOOTSTRAP_ADMIN_USERNAME=nombre_del_usuario
-```
-
-y reiniciar el servicio. Después puedes quitar esa variable.
-
-Actualmente, para conservar el comportamiento de tu aplicación existente, cualquier usuario autenticado y activo puede crear/modificar/eliminar eventos y validar QR. Si quieres separar estrictamente administrador/usuario, cambia las rutas de escritura para usar `requireAdmin`.
